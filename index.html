@@ -47,17 +47,53 @@
 
 
 		<!-- Socials -->
-		<div class="w3-dropdown-hover w3-padding">
+		<!-- Button to open the modal login form -->
+		
+		<!--<div class="w3-dropdown-hover w3-padding">
 			<button class="w3-button w3-black w3-round-large"><i class="fa fa-share"></i> Socials</button>
 			<div class="w3-dropdown-content w3-bar-block w3-border">
 			<a href="https://www.instagram.com/shepherdstrings/" class="w3-bar-item w3-button w3-round"><i class="fa fa-instagram"></i> Instagram</a>
 			<a href="https://www.youtube.com/@shepherdsstrings246/featured" class="w3-bar-item w3-button w3-round"><i class="fa fa-youtube"> Youtube</i></a>
 			</div>
-		</div>
+		</div>-->
 			</center>
 
 		</div>
 		</div>
+		
+		<!--Login-->
+
+			<!-- The Modal -->
+			<div id="id01" class="w3-modal">
+			<span onclick="document.getElementById('id01').style.display='none'"
+			class="close" title="Close Modal">&times;</span>
+
+			<!-- Modal Content -->
+			<form class="w3-modal-content w3-padding w3-round-xxlarge w3-bottombar w3-border-blue w3-royal animate" action="/action_page.php">
+				<h1 class="w3-cursive w3-center">Shepherd's Strings</h1>
+				<h3 class="w3-sans-serif">Create username:</h3>
+				<input class="w3-round-large" type="text" id="text1" name="text1"><br><br>
+		
+				<h3 class="w3-sans-serif">Create a Strong password:</h3>
+				<input class="w3-round-large" type="text" id="text2" name="text2"><br><br>
+
+				<h3 class="w3-sans-serif">Your Email:</h3>
+				<input class="w3-round-large" type="text" id="text3" name="text3"><br><br>
+		
+				<center>
+				<button class="w3-btn w3-round-large w3-deep-orange" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				<button class="w3-btn w3-round-large w3-green"type="button" onclick="submitText()">Register</button>
+				</center>
+				<p class="w3-small w3-center">powered by Google Firebase</p>
+				
+			</form>
+			</div>
+		
+		  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+		  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+		  <script src="js/firebase-config.js"></script>
+		  <script src="js/submit.js"></script>
+			
 
 		<!-- Slideshow -->
 		<center>
@@ -94,7 +130,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mi lacus, faucibus vitae est ut, convallis varius nisl. Aliquam non ornare ligula. Pellentesque ullamcorper mollis sem, non ullamcorper ipsum vehicula vel. Sed a libero dui. Phasellus dolor dolor, vulputate tincidunt dapibus non, cursus ut eros. Curabitur consequat posuere ipsum. In varius metus et suscipit tristique. Sed volutpat lacus ut ex malesuada dictum. Morbi nec elit in sapien lobortis lobortis. In maximus cursus purus sed pretium. Sed gravida lacinia turpis, congue mollis ipsum congue eu. Fusce euismod urna at magna hendrerit, eu placerat lacus varius. Ut eu dolor maximus, imperdiet tellus quis, dictum ex. Morbi a tincidunt massa, a elementum neque. Aenean sed ipsum quis ex mollis aliquet eget nec mi.</p>
 		</div>
 
-		<div class="w3-row w3-center w3-padding-32">
+		<!--<div class="w3-row w3-center w3-padding-32">
 			<div class="w3-third">
 				<p>Name</p>
 				<img src="logos/profile.jpg" class="w3-round w3-margin-bottom" alt="Name" style="width:60%">
@@ -119,7 +155,13 @@
 				<p>Name</p>
 				<img src="logos/profile.jpg" class="w3-round w3-margin-bottom" alt="Name" style="width:60%">
 			</div>
+		</div>-->
+		<center>
+		<div class="w3-padding">
+		<button class="w3-btn w3-black w3-round-xlarge" onclick="document.getElementById('id01').style.display='block'">Members Registration</button>
+		</center>
 		</div>
+		</br>
 
 		<!-- WIP warning
 		<div class="w3-panel w3-red w3-animate-fading">
