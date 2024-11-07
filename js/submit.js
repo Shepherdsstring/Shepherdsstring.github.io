@@ -17,5 +17,5 @@ function submitText() {
   };
 
   database.ref('Registration').push(data);
-  alert('Data submitted successfully!');
+  alert('Registration successful!');
 }
