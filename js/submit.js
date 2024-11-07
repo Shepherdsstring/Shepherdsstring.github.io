@@ -18,4 +18,6 @@ function submitText() {
 
   database.ref('Registration').push(data);
   alert('Registration successful!');
+  window.location.href = "https://shepherdsstring.github.io/members.html";
+
 }
