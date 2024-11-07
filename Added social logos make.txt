@@ -1,0 +1,10 @@
+Added social logos
+make box square
+add text
+remove logos from mobile
+decrease box time
+add restrictions
+remove shepherd strings
+redirected page
+try cookies
+write title on new page shepherds crew

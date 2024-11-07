@@ -5,7 +5,7 @@ const database = firebase.database();
 
 function submitText() {
   const text1 = document.getElementById('text1').value;
-  const text2 = document.getElementById('text2').value
+  const text2 = document.getElementById('text2').value;
   const text3 = document.getElementById('text3').value;
 
 
