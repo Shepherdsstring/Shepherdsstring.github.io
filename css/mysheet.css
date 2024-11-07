@@ -78,8 +78,8 @@ input[type=text], input[type=password] {
   
   /* Add Zoom Animation */
   .animate {
-    -webkit-animation: animatezoom 0.2s;
-    animation: animatezoom 0.2s
+    -webkit-animation: animatezoom 0.05s;
+    animation: animatezoom 0.05s
   }
   
   @-webkit-keyframes animatezoom {

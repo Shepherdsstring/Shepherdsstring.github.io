@@ -8,6 +8,10 @@ function submitText() {
   const text2 = document.getElementById('text2').value;
   const text3 = document.getElementById('text3').value;
 
+  if (!text1 || !text2 || !text3) {
+    alert('Please fill in all details.');
+    return; // Stop further execution
+  };
 
   const data = {
     Username: text1,
@@ -16,8 +20,18 @@ function submitText() {
 
   };
 
-  database.ref('Registration').push(data);
-  alert('Registration successful!');
-  window.location.href = "https://shepherdsstring.github.io/members.html";
+  database.ref('Registration').push(data)
+  .then(() => {
+    // Data pushed successfully, now redirect with a delay
+    setTimeout(() => {
+      window.location.href = 'https://shepherdsstring.github.io/members.html';
+    }, 1000); // Adjust the delay as needed
 
+    alert('Registration successful!');
+  })
+  .catch((error) => {
+    console.error('Error registering user:', error);
+    alert('Registration failed. Please try again.');   
+
+  });
 }
