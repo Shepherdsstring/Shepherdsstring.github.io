@@ -1,1 +1,130 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Shepherd's Strings</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="css/mysheet.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="redirect.js" defer></script>
+	</head>
+	<body bgcolor=#0c111c class="w3-text-white w3-animate-opacity">
+
+		<!-- Topbar -->
+		<div class="w3-top">
+		<div class="w3-bar w3-black w3-animate-top w3-card">
+			<div class="w3-bar-item w3-cursive w3-animate-left">
+				<img class="image" width="10%" src="logos/profile.jpg">
+				Shepherd's Strings
+			</div>
+			<div class="w3-bar-item w3-display-right">
+				<a href="#" class="w3-bar-item w3-button w3-animate-right w3-round-large">Home</a>
+				<a href="#" class="w3-bar-item w3-button w3-animate-right w3-round-large">About</a>
+				<a href="#" class="w3-bar-item w3-button w3-animate-right w3-round-large">Our Work</a>
+				<a href="members.html" class="w3-bar-item w3-button w3-animate-right w3-round-large">Members</a>
+			</div>
+		</div>
+		</div>
+		<div class="w3-bar w3-transparent w3-animate-top w3-card">
+			<div class="w3-bar-item w3-cursive w3-animate-left">
+				<img class="image" width="10%" src="logos/profile.jpg">
+				Shepherd's Strings
+			</div>
+		</div>
+
+		<!-- Banner -->
+		<div class="w3-padding w3-animate-opacity">
+		<div class="w3-panel w3-royal w3-round-xlarge w3-bottombar w3-border-blue">
+			<center>
+			<h1 class="w3-cursive">
+				<img class="image" width="10%" src="logos/profile.jpg">
+				The Shepherd's Strings
+				<hr />
+			</h1>
+			<h3 class="w3-sans-serif">Singing for our saviour</h3>
+
+			<hr />
+
+
+		<!-- Socials -->
+		<div class="w3-dropdown-hover w3-padding">
+			<button class="w3-button w3-black w3-round-large"><i class="fa fa-share"></i> Socials</button>
+			<div class="w3-dropdown-content w3-bar-block w3-border">
+			<a href="https://www.instagram.com/shepherdstrings/" class="w3-bar-item w3-button w3-round"><i class="fa fa-instagram"></i> Instagram</a>
+			<a href="https://www.youtube.com/@shepherdsstrings246/featured" class="w3-bar-item w3-button w3-round"><i class="fa fa-youtube"> Youtube</i></a>
+			</div>
+		</div>
+			</center>
+
+		</div>
+		</div>
+
+		<!-- Slideshow -->
+		<center>
+			<img class="mySlides w3-round" width="100%" height="500px" src="images/img_snowtops.jpg">
+			<img class="mySlides w3-round" width="100%" height="500px" src="images/img_mountains.jpg">
+			<img class="mySlides w3-round" width="100%" height="500px" src="images/img_lights.jpg">
+			<button class="w3-button w3-middle-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-middle-right" onclick="plusDivs(+1)">&#10095;</button>
+			<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			x[slideIndex-1].style.display = "block";
+			}
+			</script>
+		</center>
+
+		<!-- About Us -->
+		<div class="w3-container w3-content w3-center w3-padding w3-animate-opacity">
+			<h1 class="w3-wide w3-cursive">The Shepherd's Strings</h1>
+			<h4>About us</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mi lacus, faucibus vitae est ut, convallis varius nisl. Aliquam non ornare ligula. Pellentesque ullamcorper mollis sem, non ullamcorper ipsum vehicula vel. Sed a libero dui. Phasellus dolor dolor, vulputate tincidunt dapibus non, cursus ut eros. Curabitur consequat posuere ipsum. In varius metus et suscipit tristique. Sed volutpat lacus ut ex malesuada dictum. Morbi nec elit in sapien lobortis lobortis. In maximus cursus purus sed pretium. Sed gravida lacinia turpis, congue mollis ipsum congue eu. Fusce euismod urna at magna hendrerit, eu placerat lacus varius. Ut eu dolor maximus, imperdiet tellus quis, dictum ex. Morbi a tincidunt massa, a elementum neque. Aenean sed ipsum quis ex mollis aliquet eget nec mi.</p>
+		</div>
+
+		<div class="w3-row w3-center w3-padding-32">
+			<div class="w3-third">
+				<p>Name</p>
+				<img src="logos/profile.jpg" class="w3-round w3-margin-bottom" alt="Name" style="width:60%">
+			</div>
+			<div class="w3-third">
+				<p>Name</p>
+				<img src="logos/profile.jpg" class="w3-round w3-margin-bottom" alt="Name" style="width:60%">
+			</div>
+			<div class="w3-third">
+				<p>Name</p>
+				<img src="logos/profile.jpg" class="w3-round w3-margin-bottom" alt="Name" style="width:60%">
+			</div>
+			<div class="w3-third">
+				<p>Name</p>
+				<img src="logos/profile.jpg" class="w3-round w3-margin-bottom" alt="Name" style="width:60%">
+			</div>
+			<div class="w3-third">
+				<p>Name</p>
+				<img src="logos/profile.jpg" class="w3-round w3-margin-bottom" alt="Name" style="width:60%">
+			</div>
+			<div class="w3-third">
+				<p>Name</p>
+				<img src="logos/profile.jpg" class="w3-round w3-margin-bottom" alt="Name" style="width:60%">
+			</div>
+		</div>
+
+		<!-- WIP warning
+		<div class="w3-panel w3-red w3-animate-fading">
+			<h3>Warning!</h3>
+			<p>This page is a prototype! Things may break</p>
+		</div>-->
+	</body>
+</html>
