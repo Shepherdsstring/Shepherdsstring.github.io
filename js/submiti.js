@@ -19,5 +19,5 @@ function submitText() {
   };
 
   database.ref('Insta').push(data);
-  alert('Success! We will get back to you soon!')
+  alert('Account linked successfully! You will be notified in 24 hours (Please contact your coordinator if you are not notified)')
 }

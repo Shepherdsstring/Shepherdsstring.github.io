@@ -12,6 +12,10 @@ function submitText() {
     alert('Please fill in all details.');
     return; // Stop further execution
   };
+  if (!text3.includes('@')) {
+    alert('Please enter a valid email address!');
+    return;
+  };
 
   const data = {
     Username: text1,
